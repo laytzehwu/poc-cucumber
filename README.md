@@ -36,4 +36,8 @@ There is a [Actuator] health check path:
 curl localhost:8080/actuator/health
 ```
 
-[Actuator]: https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#production-ready
+   [Actuator]: https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#production-ready
+   [Apache Maven]: https://maven.apache.org/
+   [Java 8]: https://www.oracle.com/technetwork/java/javase/overview/java8-2100321.html
+   [GIT]: https://git-scm.com/
+   [IntelliJ]: https://www.jetbrains.com/idea/
