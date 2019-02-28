@@ -12,11 +12,18 @@ import javax.servlet.http.HttpServletResponse;
 public class WeekdaysController {
 
     @RequestMapping(method= RequestMethod.GET ,path = "/isFriday/{pathVariable}")
-    public String isFriday(
+    public WeekdaysResponse isFriday(
             @PathVariable("pathVariable")String pathVariable,
             HttpServletResponse response) {
         response.setStatus(HttpServletResponse.SC_OK);
-
-        return "Test:" + Friday.isFriday(pathVariable);
+        WeekdaysResponse resp = new WeekdaysResponse();
+        if (Friday.isFriday(pathVariable)) {
+            resp.code = HttpServletResponse.SC_OK;
+            resp.msg = pathVariable + " is friday ";
+        } else {
+            resp.code = HttpServletResponse.SC_BAD_REQUEST;
+            resp.msg = pathVariable + " is not friday ";
+        }
+        return resp;
     }
 }
