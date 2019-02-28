@@ -1,5 +1,16 @@
 # Prove of concept for Cucumber in Java project
 
+## Prerequisite
+Some software are required before run the program:
+
+1. [Java 8] - Programming language of backend
+
+2. [Apache Maven] - Software project management and comprehension tool. We are using it to build and run our project.
+
+3. [GIT] - Version control system
+
+4. [IntelliJ] - IDE to do Java coding
+
 # Build
 Build the application by using below command:
 ```ssh
